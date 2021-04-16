@@ -1,4 +1,4 @@
-# donations
+# Do-Nations
 
 ## Team Members
 
