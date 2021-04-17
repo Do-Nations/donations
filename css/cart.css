@@ -26,16 +26,18 @@ header img{
 #logo{    
     width: 40%; 
     background-color: #b0efeb;
-    height: 100px;
 }
 #logo h1{    
-    /* height: 100px; */
+    height: 100px;
     padding-left: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #a35709;
-    font-size: 17px;
-    padding-top: 40px;
+    font-size: 20px;
+    padding-top: 55px;
     vertical-align: text-bottom;
+    margin: 0;
+    
+ 
 } 
 #links{ 
     width: 75%; 
@@ -55,73 +57,11 @@ header ol li a{
     color: blue;
 }
 
-main{
-    height: 500px;
-}
-#main{
-    display: flex;
-    align-items: center;
-    /* margin: 20px; */
-    justify-content: center;   
-    height: 500px;  
-
-}
-#sd1,#sd2{
-    bottom:20px;
-    width: 30%;
-    float: left;   
-    margin-right: 5%;
-    display: flex;
-    justify-content: center;
-    cursor: pointer; 
-    font-size: 35px;
-    font-weight: bold;
-    
-}
-#sd1:hover{
-    transform: scale(1.2);
-    
-}
-#sd2:hover{
-    transform: scale(1.2);
-    
-}
-
-#sd1{
-    background-image: url(../img/donation/Pottery\ jar.jpg);
-    background-position: right bottom, left top;
-    height: 350px;
-    width: 350px;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    bottom:20px;
-    text-align: center;  
-    
-}
 
 
-#sd2{
-    background-image:url(../img/donation/donation\ money.jpg) ;
-    height: 350px;
-    width: 350px;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    bottom:20px;
-    text-align: center;
 
-}
 
-main img{
-    width: 200px;
-    height:200px;
-}
-#main h1{
-    color: white;
-    font-family: 'Indie Flower', cursive;
 
-}
 
 footer{
     border-top: black solid 2px;
@@ -132,7 +72,6 @@ footer{
 footer h2{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    
 }
 .feedback{
     width: 30%;
