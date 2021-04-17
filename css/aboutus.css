@@ -2,58 +2,7 @@
     box-sizing: border-box;
     
 }
-body{
-    background-color: whitesmoke;
-    margin: 3%;
-}
-header {
 
-    display: flex;
-    height: 100px;
-    /* width: 100%; */
-    align-items: center;
-    background-color: #b0efeb;
-    /* position: fixed; */
-
-}
-header img{
-    margin-left: 50px;
-    margin-right: 10px;
-    display: block;
-    
-}
-
-#logo{    
-    width: 40%; 
-    background-color: #b0efeb;
-}
-#logo h1{    
-    height: 100px;
-    padding-left: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #a35709;
-    font-size: 20px;
-    padding-top: 50px;
-    vertical-align: text-bottom;
-    margin: 0;
-} 
-#links{ 
-    width: 75%; 
-    background-color: #b0efeb;   
-}
-header ol li:first-child{
-    margin-left: 50px;   
-}
-header ol li{
-    display: inline;
-    padding: 20px;   
-    text-decoration: none; 
-}
-header ol li a{      
-    text-decoration: none; 
-    font-family: Arial, Helvetica, sans-serif;
-    color: blue;
-}
 
 main img{
     border-radius: 50%;
@@ -174,11 +123,65 @@ main h1{
     margin-top: 50px;
 }                    
 
+body{
+    background-color: whitesmoke;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+}
+header {
+
+    display: flex;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    background-color: whitesmoke;
+    position: fixed;
+    
+
+}
+header img{
+    margin-left: 50px;
+    margin-right: 10px;
+    display: block;
+    
+}
+
+#logo{    
+    width: 40%; 
+    background-color: whitesmoke;
+}
+#logo h1{    
+    /* height: 100px; */
+    padding-left: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1D0024;
+    font-size: 20px;
+    padding-top: 59px;
+    vertical-align: text-bottom;
+} 
+#links{ 
+    width: 75%; 
+    background-color: whitesmoke;   
+}
+header ol li:first-child{
+    margin-left: 50px;   
+}
+header ol li{
+    display: inline;
+    padding: 20px;   
+    text-decoration: none; 
+}
+header ol li a{      
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1D0024;
+    font-weight: bold;
+}
 footer{
     border-top: black solid 2px;
     clear: both;
     display: flex;
-    background-color: #b0efeb;
+    background: url(/img/pattern.jpg);
 }
 footer h2{
     font-family: Arial, Helvetica, sans-serif;
