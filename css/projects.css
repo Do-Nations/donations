@@ -1,0 +1,53 @@
+main div img{
+    height: 200px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+main div{
+    display: inline-block;
+    width: 25%; 
+    text-align: center;
+    /* padding: 50px; */
+    border: 1px solid rgb(221, 218, 218);
+    margin: 50px;
+}
+
+main div p{
+    padding: 30px;
+    letter-spacing: 2px;
+    line-height: 150%;
+    /* text-align: justify; */
+}
+
+main div h2{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#special img{
+    width: 100%;
+}
+
+main h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+
+#hero{
+    width: 90%;
+    /* height: 100%; */
+}
+
+#hero img{
+    padding: 0;
+    margin: 0;
+    display: block;
+    height: 500px;
+    width: 50%;
+    margin: auto;
+}
