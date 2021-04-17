@@ -1,4 +1,8 @@
+html
+{
+    scroll-behavior: smooth;
 
+}
 
 .volunteerform label
 {
@@ -46,6 +50,49 @@ button {
     color: white;
   }
 
+
+.hero
+{
+    background-image: url("../img/anna.jpg");
+    padding-bottom: 44%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-text
+{
+   
+    width: 20%;
+    margin-left: 5%;
+    background-color:whitesmoke;
+
+    padding-top: 15%;
+    position: relative;
+}
+
+.text-content
+{
+    margin-bottom: 20%;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+}
+
+
+.text-content a:link, .text-content a:visited {
+    background-color: white;
+    color: black;
+    border: 1px solid olive;
+   width: 55%;
+padding: 10px 20px;
+
+    
+  }
+
+  .text-content p 
+  {
+      font-weight: bold;
+  }
+  
   section
   {
  
@@ -64,3 +111,9 @@ button {
   {
       display: none;
   }
+
+
+
+
+
+  
