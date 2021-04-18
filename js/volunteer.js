@@ -1,6 +1,28 @@
 'use strict' ;
 
 
+let i = 0;
+let txt = ' Please Fill out the below Form.'
+let timespeed = 100;
+
+let paraghraph=document.getElementById("herotext")
+
+addEventListener('DOMContentLoaded', slowwrite)
+
+function slowwrite() {
+
+  if (i < txt.length) {
+    paraghraph.innerHTML += txt.charAt(i)
+    i++
+    setTimeout(slowwrite, timespeed)
+  }
+
+
+}
+
+
+
+
 let list=document.getElementById('submitzz');
 
 list.addEventListener('click',showlist);
@@ -72,3 +94,5 @@ document.getElementById("firstName").value =  data;
 document.getElementById("lastName").value =  data2;
 document.getElementById("age").value =  data3;
 document.getElementById("phoneNumber").value =  data4;
+
+

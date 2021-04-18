@@ -51,64 +51,15 @@ main h1{
     height: 500px;
     width: 50%;
     margin: auto;
-
-*{
-    box-sizing: border-box;
-    
-}
-body{
-    background-color: whitesmoke;
-    margin-right: 1.5%;
-    margin-left: 1.5%;
-}
-header {
-
-    display: flex;
-    height: 150px;
-    width: 100%;
-    align-items: center;
-    background-color: whitesmoke;
-    position: fixed;
-
-}
-header img{
-    margin-left: 50px;
-    margin-right: 10px;
-    display: block;
-    
 }
 
-#logo{    
-    width: 40%; 
-    background-color: whitesmoke;
-}
-#logo h1{    
-    /* height: 100px; */
-    padding-left: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #1D0024;
-    font-size: 20px;
-    padding-top: 59px;
-    vertical-align: text-bottom;
-} 
-#links{ 
-    width: 75%; 
-    background-color: whitesmoke;   
-}
-header ol li:first-child{
-    margin-left: 50px;   
-}
-header ol li{
-    display: inline;
-    padding: 20px;   
-    text-decoration: none; 
-}
-header ol li a{      
-    text-decoration: none; 
-    font-family: Arial, Helvetica, sans-serif;
-    color: #1D0024;
+#herotext
+{
     font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
 }
+
 
 main img{
 
@@ -118,16 +69,7 @@ main img{
     margin-right: auto;
     margin-bottom: 70px;
 }
-.VG1,.VG2 {
-    width: 50%;
-    padding: 0px 100px 0px 100px;
-    float: left;
-    margin-bottom: 70px;
-}
-.VG2 {    
-    border-left: black solid 1px;
-    
-}
+
 
 footer{
     border-top: black solid 2px;
