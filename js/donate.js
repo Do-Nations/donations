@@ -7,11 +7,12 @@ function product(name,url,price){
     this.name=name;
     this.url=url; 
     this.price=price;
-    this.purshaceNo=0
+    this.purshaceNo=0;
+    this.total=0
     products.push(this);    
 }
 
-// This to create the instances -products 
+// This to create the instances -products
 
 new product('Pottery Jar','../img/donation/Pottery\ jar.jpg',20);
 new product('Natural Organic Soap','../img/donation/soap.jpg',5);
@@ -19,6 +20,7 @@ new product('Puppet','../img/donation/puppet.jpg',15);
 new product('Handmade Tote Bags','../img/donation/Bag.jpg',7);
 new product('Handmade Leather Wallet','../img/donation/ Wallet.jpg',25);
 new product('Floral Dinnerware Sets','../img/donation/Dinnerware.jpg',15);
+
 console.log(products);
 // This to invoke the ID of the HTML element: 
 let parent=document.getElementById('main');
@@ -36,38 +38,70 @@ function showProduct(event){
     parent.appendChild(productForm);
     for (let i=0;i<products.length;i++){
         // this to create the label element and its attributes for,content=image
-        let productLable=document.createElement('label');
-        productLable.setAttribute('for',products[i].name);
+        // let productImage=document.createElement('img');
+        // productForm.appendChild()
+        // create division to hold all of product contents
+        let divisons=document.createElement('div');
+        divisons.setAttribute('class','box');
+        productForm.appendChild(divisons);
+        // Create image elemnt holds all attributes
         let productImage=document.createElement('img');
-        productLable.appendChild(productImage);
+        divisons.appendChild(productImage);
         productImage.setAttribute('src',products[i].url);
-        productForm.appendChild(productLable);        
+        // create h4 element that includes the name of product
+        let productDescription=document.createElement('h4');
+        productDescription.textContent=products[i].name;
+        divisons.appendChild(productDescription);
+        // Create the form label
+        let productLable=document.createElement('label');
+        productLable.setAttribute('for',products[i].name);       
+        divisons.appendChild(productLable);   
+        productLable.textContent=products[i].price+' JOD';     
         
         // This is to creat the input element and add its attribute.
         let checkpointProduct=document.createElement('input');
         checkpointProduct.setAttribute('name',products[i].name);
         checkpointProduct.setAttribute('type','checkbox');        
-        productForm.appendChild(checkpointProduct);
-        // checkpointProduct.setAttribute('style',':hover:${products[i].name}');      
-
+        divisons.appendChild(checkpointProduct);
+        // checkpointProduct.setAttribute('style',':hover:${products[i].name}');
+        
+        
+        
         
     }
+    let divi=document.createElement('div');
+    divi.setAttribute('class','subm');
+    productForm.appendChild(divi);
     
     let linkCart=document.createElement('a'); 
     linkCart.setAttribute('href','../html/cart.html');
-    productForm.appendChild(linkCart);
+    divi.appendChild(linkCart);
 
     let sbmitted=document.createElement('input');
     sbmitted.setAttribute('type','submit');
     sbmitted.setAttribute('name','submit');
-    sbmitted.setAttribute('value','Cart');
-    linkCart.appendChild(sbmitted);    
+    sbmitted.setAttribute('value','Add to Cart');
+    linkCart.appendChild(sbmitted);  
 
-}
-productForm.addEventListener('submit',updatePurshase);
+    productForm.addEventListener('submit',updatePurshase);
 
-function updatePurshase(event){
+    function updatePurshase(event){
+        localStorage.clear();
+        event.preventDefault();
+        // targ=JSON.stringify(event.target);
+        console.log('This is the event',event);    
+           
+        for (let i=0;i<products.length;i++){
+            let TorF =event.target[i].checked;
+            if (TorF==true){
+                products[i].purshaceNo++;
+                console.log(products[i].purshaceNo);             
+            }
+        }
+        let stringProduct=JSON.stringify(products)
+        localStorage.setItem('Products',stringProduct);
+           
     
-    
+    }
 
 }
