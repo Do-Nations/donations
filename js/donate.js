@@ -66,8 +66,8 @@ function showProduct(event){
 }
 productForm.addEventListener('submit',updatePurshase);
 
-function updatePurshase(event){
+// function updatePurshase(event){
     
     
 
-}
+// }
