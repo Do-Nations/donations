@@ -50,7 +50,6 @@ function showProduct(event){
         productForm.appendChild(checkpointProduct);
         // checkpointProduct.setAttribute('style',':hover:${products[i].name}');      
 
-        
     }
     
     let linkCart=document.createElement('a'); 
