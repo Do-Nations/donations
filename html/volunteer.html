@@ -16,20 +16,23 @@
     <header>
         <div id="logo">
             <a href="/index.html">
-            <img src="/img/do-nations logo-01.png" alt="Logo" height="100px" align='left'>        
-            <h1>Donation Organization <br> for charity works</h1> </a>
+            <img src="/img/do-nations logo-01.png" alt="Logo" height="100px" align='left'>    
+        </a>    
+            <h1>Donation Organization <br> for charity works</h1> 
         </div>
 
         <div id="links">
         <ol>
-            <li><a href="html/volunteer.html">Volunteer</a></li>
-            <li><a href="html/donate.html">Donate</a></li>
-            <li><a href="html/projects.html">Projects</a></li>
-            <li><a href="html/about-us.html">About Us</a></li>  
+            <li><a href="/html/volunteer.html">Volunteer</a></li>
+            <li><a href="/html/donate.html">Donate</a></li>
+            <li><a href="/html/projects.html">Projects</a></li>
+            <li><a href="/html/about-us.html">About Us</a></li>  
                       
         </ol>
         </div>
-        
+        <a href="/html/cart.html">
+            <img src="/img/PngItem_5216062.png" alt="" class="cart">
+        </a>
     </header>
 
 
@@ -41,52 +44,54 @@
 
         </div>
         
-<form class="volunteerform" id="volunteerform">
+<form class="volunteerform" id="volunteerform" >
 
     <p id="herotext"></p>
     <fieldset>
   <legend> &nbsp; Fill this form &nbsp; </legend> 
     <label>First Name</label>
-    <input type="text" id="firstName" value="firstName"> 
+    <input type="text" id="firstName" required /> 
 <br>
 <br>
     <label  id="specialtext">Last Name</label>
-    <input type="text" id="lastName"> 
+    <input type="text" id="lastName" required /> 
 
 
     <br>
     <br>
 
     <label>Age </label>
-    <input type="text" id="age"> 
+    <input type="text" id="age" required> 
     <br><br>
 
 
     <label>Phone Number</label>
-    <input type="text" id="phoneNumber"> 
+    <input type="text" id="phoneNumber" required > 
 
 <br>
 <br>
 
 <label>Gender</label>
-    <input type="radio" id="male" name="gender" value="male">
+    <input type="radio" id="male" value="male" name="gender" value="male" required>
 Male
-<input type="radio" id="female" name="gender" value="female">
+<input type="radio" id="female" value="female" name="gender" value="female" required>
 Female
 
 <br>
 <br>
+
 <label> Office </label>
-    <input type="checkbox" id="zarqa"  value="male">
+    <input type="checkbox" id="zarqa"  value="office" >
 Zarqa
-<input type="checkbox" id="amman" value="female">
+<input type="checkbox" id="amman" value="zarqa">
 Amman
 
-<input type="checkbox" id="irbid" value="female">
+<input type="checkbox" id="irbid" value="amman">
 Irbid
 
 <br> <br>
-<button type ="submit" id="submitzz"> Check </button>
+
+<button type="submit" id="submitzz" class="button" value="Submit">
 
 
     </fieldset>
@@ -128,14 +133,20 @@ Irbid
     </main>
 
 
+
+    <div id="list">
+
+
+    </div>
+
 <footer>
     <div class="feedback">
         <form action="">
             <h2> For Feedback:</h2> <br>
-            <label for="name">Name:</label>
-            <input type="text" name="name"> <br>
+            <label for="name" >Name:</label>
+            <input type="text" name="name" placeholder="Enter Your Name"> <br>
             <br>
-            <textarea name="comment" id="comment" cols="30" rows="10">Enter your comment</textarea>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter Your Comment"></textarea>
             <button> Submit</button>
 
         </form>

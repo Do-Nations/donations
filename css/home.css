@@ -54,6 +54,7 @@ header ol li a{
     font-family: Arial, Helvetica, sans-serif;
     color: #1D0024;
     font-weight: bold;
+    z-index: 2;
 }
 
 main img{
@@ -110,10 +111,20 @@ footer h2{
     color: white;
     font-size: 50px;
     font-weight: bolder;
-    z-index: 20;
+    z-index: 1;
     position: relative;
     bottom: 1000px;
     left: 200px;
     font-family: cursive;
     width: 70%;
+}
+
+header ol{
+    width: 500px;
+}
+#links{
+    width: 700px;
+}
+.cart{
+    width: 50px;
 }
