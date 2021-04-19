@@ -6,6 +6,8 @@ let timespeed = 100;
 let counter=0;
 let listArray=[];
 
+
+
 let paraghraph = document.getElementById("herotext")
 const orders = document.getElementById('list');
 
@@ -49,13 +51,14 @@ function slowwrite() {
 // Start now today 
 
 
-function Members(fname,lname,age,phone,type) {
+function Members(fname,lname,age,phone,type, imageUpload) {
     
   this.fname = fname;
   this.lname = lname;
   this.age = age;
   this.phone = phone;
   this.type=type;
+  this.imageUpload = imageUpload;
   Members.member.push(this)
 }
 
@@ -82,12 +85,15 @@ let phone =document.getElementById('phoneNumber');
 let male=document.getElementById('male')
 let female=document.getElementById('female')
 let type;
+let imageUpload = document.getElementById('url');
+
 
 
   fname =fname.value
   lname=lname.value
   age=age.value
   phone=phone.value
+  imageUpload=imageUpload.value
 
 
   let newsMember;
@@ -101,7 +107,7 @@ let type;
     type='female'
   }
   
-  newsMember= new Members(fname,lname,age,phone,type)
+  newsMember= new Members(fname,lname,age,phone,type, imageUpload)
 
  // console.log(JSON.stringify(Members.member))
  let data = localStorage.getItem("member"); 
@@ -110,7 +116,7 @@ let type;
   console.log('data is null')
  }
  else{
- console.log(JSON.parse(data))
+//  console.log(JSON.parse(data))
  }  
 
   localStorage.setItem("member", JSON.stringify(Members.member)); 
@@ -118,9 +124,12 @@ let type;
 }
 
 
+// Uploading Image
+
+
 function render(){
   parent.textContent='';
-
+  
  getData(); 
  
   parent.appendChild(ulElement);
@@ -131,13 +140,31 @@ function render(){
   for(let i= 0 ; i < Members.member.length;i++)
 {
   const drinkLI = document.createElement('li');
+
+  // let image = document.getElementById('imgURL');
+  // image.src = imageUpload1;
+
   const infoP = document.createElement('p');
 
-  infoP.textContent = `Your name is : ${Members.member[i].fname} ${Members.member[i].lname} ,${Members.member[i].age} , ${Members.member[i].phone} ${Members.member[i].type}`;
+
+
+
+
+
+
+// console.log(imageUpload1)
+
+  let imageUpload = document.createElement('img')
+  drinkLI.appendChild(imageUpload)
+  imageUpload.src = Members.member[i].imageUpload;
+  imageUpload.style.width = '156px';
+
+  
+  infoP.textContent = `Your name is : ${Members.member[i].fname} ${Members.member[i].lname}, Age: ${Members.member[i].age}, Phone Number: ${Members.member[i].phone}, Gender: ${Members.member[i].type}`;
   drinkLI.appendChild(infoP);
   orders.appendChild(drinkLI);
 
-  console.log('test members num'+ Members.member.length)
+  // console.log('test members num'+ Members.member.length)
 
 }
 
@@ -217,6 +244,8 @@ firstName = document.getElementById("firstName").value
     
     localStorage.setItem('name',firstName);
 
+    localStorage.setItem('image', imageUpload);
+
     lastName = document.getElementById("lastName").value
     localStorage.setItem('lname',lastName);
 
@@ -237,3 +266,5 @@ document.getElementById("firstName").value =  data;
 document.getElementById("lastName").value =  data2;
 document.getElementById("age").value =  data3;
 document.getElementById("phoneNumber").value =  data4;
+
+
