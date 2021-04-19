@@ -106,7 +106,7 @@ padding: 10px 20px;
 
 ul 
 {
-    background-color: red;
+    /* background-color: red; */
     width: 22%;
 
 }
@@ -115,3 +115,14 @@ ul
     background-color: yellow;
 }
   
+#zarqa-list li img{
+    width: 200px;
+}
+
+#amman-list li img{
+    width: 200px;
+}
+
+#irbid-list li img{
+    width: 200px;
+}
