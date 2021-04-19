@@ -104,8 +104,14 @@ padding: 10px 20px;
       display: none;
   }
 
+ul 
+{
+    background-color: red;
+    width: 22%;
 
-
-
-
+}
+#list
+{
+    background-color: yellow;
+}
   
