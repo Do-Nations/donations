@@ -16,7 +16,7 @@ function megaSum() {
 function listProduct() {
 
     let parent = document.getElementById('main');
-    console.log(parent)
+    console.log(parent);
     let productForm = document.createElement('form');
     parent.appendChild(productForm);
     // aLL  tOTAL ELEMENT
@@ -69,19 +69,18 @@ function listProduct() {
             let totalPriceLabel = document.createElement('label');
             totalPriceLabel.setAttribute('for', products[i].name);
             divisons.appendChild(totalPriceLabel);
-            totalPriceLabel.textContent = 'Total:' + products[i].price;
+            totalPriceLabel.textContent = 'Total:' + products[i].price
 
             function total(event) {
                 // return itemNo.value*products[i].price;
                 let value = itemNo.value * products[i].price;
                 console.log(value);
-                totalPriceLabel.textContent = 'Total:' + value + 'JOD'
+                totalPriceLabel.textContent = 'Total:' + value + 'JOD';
                 products[i].total = value;
                 products[i].purshaceNo = itemNo.value;
                 console.log('The total quantity', products[i].purshaceNo);
                 megaTotal = megaSum();
                 all.innerHTML = `Total: ${megaTotal}`;
-            
             }
 
         }
