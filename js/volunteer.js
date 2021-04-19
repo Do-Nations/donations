@@ -1,19 +1,11 @@
-'use strict';
-// Typing text above form
+'use strict' ;
+
+
 let i = 0;
-let txt = ' Be a Volunteer !.'
+let txt = ' Please Fill out the below Form.'
 let timespeed = 100;
-let counter=0;
-let listArray=[];
 
-let paraghraph = document.getElementById("herotext")
-const orders = document.getElementById('list');
-
-let parent=document.getElementById('list')
-
-let ulElement = document.createElement('ul')
-
-
+let paraghraph=document.getElementById("herotext")
 
 addEventListener('DOMContentLoaded', slowwrite)
 
@@ -25,137 +17,82 @@ function slowwrite() {
     setTimeout(slowwrite, timespeed)
   }
 
+
 }
 
 
-// End of typing text above form
-
-// check Which office checked
-// let zarqa = document.getElementById('zarqa');
-// let amman = document.getElementById('amman');
-// let irbid = document.getElementById('irbid');
-
-// // Lists dummy Data .
-// let zarqalist = document.getElementById('zarqa-list');
-// let ammanlist = document.getElementById('amman-list');
-// let irbidlist = document.getElementById('irbid-list');
-
-// list.addEventListener('click', showloc);
 
 
-// Select-button 
+let list=document.getElementById('submitzz');
+
+list.addEventListener('click',showlist);
 
 
-// Start now today 
+let zarqa=document.getElementById('zarqa');
+let amman=document.getElementById('amman');
+let irbid=document.getElementById('irbid');
 
 
-function Members(fname,lname,age,phone,type) {
+let zarqalist=document.getElementById('zarqa-list');
+
+let ammanlist=document.getElementById('amman-list');
+let irbidlist=document.getElementById('irbid-list');
+let eventform= document.getElementById('volunteerform')
+
+let firstName;
+let lastName;
+let age;
+let phoneNumber;
+
+
+
+function showItem (event)
+{
     
-  this.fname = fname;
-  this.lname = lname;
-  this.age = age;
-  this.phone = phone;
-  this.type=type;
-  Members.member.push(this)
+    event.preventDefault()
+    
+    eventform.style.display = "none";
+    if(zarqa.checked===true)
+    {
+        zarqalist.style.display = "block";
+    }
+
+    if (amman.checked===true)
+    {
+        ammanlist.style.display = "block";
+        
+    }
+    
+    if(irbid.checked===true)
+    {
+irbidlist.style.display = "block";
 }
+      
 
+    
+firstName = document.getElementById("firstName").value
+    
+    localStorage.setItem('name',firstName);
 
-Members.member=[]
-//console.log(fname)
-//const bahaa=new Members('bahaa', 'bahaa','bahaa','15','20','Male');
+    lastName = document.getElementById("lastName").value
+    localStorage.setItem('lname',lastName);
 
-render()
-let list = document.getElementById('submitzz');
+    age = document.getElementById("age").value
+    localStorage.setItem('age',age);
 
-list.addEventListener('click', showlist);
-
-
-
-function showlist(event) {
-
-  event.preventDefault();
-
-let fname =document.getElementById('firstName');
-let lname =document.getElementById('lastName');
-let age =document.getElementById('age');
-let phone =document.getElementById('phoneNumber');
-let male=document.getElementById('male')
-let female=document.getElementById('female')
-let type;
-
-
-  fname =fname.value
-  lname=lname.value
-  age=age.value
-  phone=phone.value
-
-
-  let newsMember;
-  if(male.checked)
-  {
-    type='male'
-  }
-  
-  else
-  {
-    type='female'
-  }
-  
-  newsMember= new Members(fname,lname,age,phone,type)
-
- // console.log(JSON.stringify(Members.member))
- let data = localStorage.getItem("member"); 
-
- if(data==null){
-  console.log('data is null')
- }
- else{
- console.log(JSON.parse(data))
- }  
-
-  localStorage.setItem("member", JSON.stringify(Members.member)); 
-  render()
+    phoneNumber = document.getElementById("phoneNumber").value
+    localStorage.setItem('phoneNumber',phoneNumber);
+    
+    
 }
+let data =localStorage.getItem('name');
+let data2 =localStorage.getItem('lname');
+let data3 =localStorage.getItem('age');
+let data4 =localStorage.getItem('phoneNumber');
+
+document.getElementById("firstName").value =  data;
+document.getElementById("lastName").value =  data2;
+document.getElementById("age").value =  data3;
+document.getElementById("phoneNumber").value =  data4;
 
 
-function render(){
-  parent.textContent='';
-
- getData(); 
- 
-  parent.appendChild(ulElement);
-
-  // const drinkLI = document.createElement('li');
-  // const infoP = document.createElement('p');
-
-  for(let i= 0 ; i < Members.member.length;i++)
-{
-  const drinkLI = document.createElement('li');
-  const infoP = document.createElement('p');
-
-  infoP.textContent = `Your name is : ${Members.member[i].fname} ${Members.member[i].lname} ,${Members.member[i].age} , ${Members.member[i].phone} ${Members.member[i].type}`;
-  drinkLI.appendChild(infoP);
-  orders.appendChild(drinkLI);
-
-  console.log('test members num'+ Members.member.length)
-
-}
-
- }
-
-
-
-
-
-function getData()
-{
-  let data = localStorage.getItem("member"); //getting localstorage
-
-  if(data !== null)
- {
- Members.member = JSON.parse(data);  
-
- }
-
- 
-}
