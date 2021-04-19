@@ -8,7 +8,7 @@ function product(name,url,price){
     this.url=url; 
     this.price=price;
     this.purshaceNo=0;
-    this.total=0
+    this.total=0;
     products.push(this);    
 }
 
@@ -107,11 +107,8 @@ function showProduct(event){
 }
 document.getElementById('sd2').addEventListener('click', function () {
 
-  document.querySelector('.big-popup').style.display = 'flex';
-  //   document.getElementsByClassName('big-popup').style.display = 'flex';
-  //   document.getElementsByClassName("big-popup").setAttribute('style','display:flex;');
-
-
+//   document.querySelector('.big-popup').style.display = 'flex';
+document.getElementById('big-popup').setAttribute('style','display:flex');
 
 });
 
