@@ -105,3 +105,18 @@ function showProduct(event){
     }
 
 }
+document.getElementById('sd2').addEventListener('click', function () {
+
+  document.querySelector('.big-popup').style.display = 'flex';
+  //   document.getElementsByClassName('big-popup').style.display = 'flex';
+  //   document.getElementsByClassName("big-popup").setAttribute('style','display:flex;');
+
+
+
+});
+
+document.getElementById('close').addEventListener('click', function () {
+
+  // document.getElementsByClassName('big-popup').style.display='none';
+  document.querySelector('.big-popup').style.display = 'none';
+});
