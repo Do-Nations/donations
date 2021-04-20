@@ -14,7 +14,7 @@ header {
     width: 100%;
     align-items: center;
     background-color: whitesmoke;
-    position: fixed;
+    position: relative;
 
 }
 header img{
