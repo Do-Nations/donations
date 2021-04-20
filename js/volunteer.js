@@ -151,7 +151,7 @@ function render(){
   imageUpload.style.width = '250px';
   // imageUpload.style.height = '220px';
 
-  paraghh.innerHTML = ` Name : ${Members.member[i].fname} ${Members.member[i].lname},
+  paraghh.innerHTML = ` Name : ${Members.member[i].fname},
   <br> Age: ${Members.member[i].age}, <br>
   Phone : ${Members.member[i].phone}, <br>
    Gender: ${Members.member[i].type} <br>`;
