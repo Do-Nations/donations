@@ -43,9 +43,10 @@ text-align: center;
 }
 
 button {
+    display: inline-block;
     background-color: white; 
     color: black; 
-   margin-left: 44%;
+   margin-left: 18%;
    padding:2%;
   }
   
@@ -86,7 +87,7 @@ animation-duration:5s;
     font-weight: bold;
     text-decoration: underline;
     font-style: italic;
-    margin:3%
+    margin:3%;
  
 }
 
@@ -130,34 +131,124 @@ ul
 {
     font-weight: bold;
 }
+    /* #list{
 
+    }
 
-#list p
-{
-    margin-top: 0.5%;
-    border:1px solid;
-    width:100%;
-
-
+    #list p
+    {
+        margin-top: 0.5%;
+        border:1px solid;
+        width: 37%;
+    */
+/* 
 }
 #list img
 {
     margin-top: 2%;
 
-}
+} */
   
 #zarqa-list li 
-{
-    display: inline;
+{   
+    padding: 15px;
+    display: inline-block;
+    border:black solid 2px;
+    background-color:whitesmoke;
+    padding-top: 20px;
+    height: 320px;
+    margin-left: 15px;
+    
+}
+#amman-list li{
+    padding: 15px;
+    display: inline-block;
+    border:black solid 2px;
+    background-color:whitesmoke;
+    padding-top: 20px;
+    height: 320px;
+    margin-left: 15px;
+
+
+
+}
+
+#irbid-list li {
+    padding: 15px;
+    display: inline-block;
+    border:black solid 2px;
+    background-color:whitesmoke;
+    padding-top: 20px;
+    height: 320px;
+    padding-left: 15px;
+    margin-left: 15px;
+
 }
 #zarqa-list li img{
-    width: 200px;
+    width: 300px;
+    /* height: 200px; */
+    padding-top: 10px;
+    height: 250px;
+   
+
+
 }
 
 #amman-list li img{
-    width: 200px;
+    width: 300px;
+    padding-top: 10px;
+    height: 250px;
 }
 
 #irbid-list li img{
-    width: 200px;
+    width: 300px;
+    padding-top: 10px;
+    height: 250px;
 }
+#zarqa-list,#amman-list ,#irbid-list{
+width: 100%;
+padding-bottom: 20px;
+
+
+}
+
+.user-cart{
+
+    width: 40%;
+    padding: 15px;
+    display: inline-block;
+    border:gray inset 4px;
+    background-color:whitesmoke;
+    height: 320px;
+    margin-left: 7%;
+    margin-bottom: 1%;
+
+    
+
+}
+.user-cart p {
+    width: 45%;
+    margin-top: 5%;
+    /* border:1px solid; */
+    /* display: inline-block; */
+    float: left;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+    font-weight: bolder;
+    height: 80%;
+    line-height:200%;
+    color: olive;
+    text-align: justify;
+   
+  
+    
+}
+.user-cart img{
+    margin-top: 5%;
+    margin-left: 5%;
+    float: right;
+    height: 80%;
+    
+
+}
+
