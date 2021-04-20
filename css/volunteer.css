@@ -16,6 +16,9 @@ img
 {
 display: inline;
 }
+body{
+    width: 100%;
+}
 
 .volunteerform
 {
@@ -219,15 +222,18 @@ padding-bottom: 20px;
     display: inline-block;
     border:gray inset 4px;
     background-color:whitesmoke;
-    height: 320px;
+    /* height: 320px; */
     margin-left: 7%;
     margin-bottom: 1%;
+    border-radius: 4%;
+    /* position: relative; */
 
     
 
 }
 .user-cart p {
-    width: 45%;
+    /* position: absolute; */
+    width: 40%;
     margin-top: 5%;
     /* border:1px solid; */
     /* display: inline-block; */
@@ -235,10 +241,11 @@ padding-bottom: 20px;
     font-family: 'Architects Daughter', cursive;
     font-size: 25px;
     font-weight: bolder;
-    height: 80%;
-    line-height:200%;
+    height:100%;
+    line-height:150%;
     color: olive;
-    text-align: justify;
+    /* text-align: justify; */
+    
    
   
     
@@ -247,7 +254,7 @@ padding-bottom: 20px;
     margin-top: 5%;
     margin-left: 5%;
     float: right;
-    height: 80%;
+    height: 250px;
     
 
 }

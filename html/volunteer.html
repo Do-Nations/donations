@@ -47,13 +47,13 @@
 
         </div>
         
-<form class="volunteerform" id="volunteerform">
+<form action="" class="volunteerform" id="volunteerform">
 
     <p id="herotext"></p>
     <fieldset>
   <legend> &nbsp; Fill this form &nbsp; </legend> 
-    <label>First Name</label>
-    <input type="text" id="firstName"  placeholder="enter your name"/> 
+    <label >First Name</label>
+    <input type="text" id="firstName"  placeholder="enter your name" name="firstName" required >  
 <br>
 <br>
     <!-- <label  id="specialtext">Last Name</label>
@@ -64,23 +64,23 @@
     <br> -->
 
     <label>Age </label>
-    <input type="number" id="age" placeholder="enter your age" required/> 
+    <input type="number" id="age" placeholder="enter your age" name="age" required/> 
     <br><br>
 
 
     <label>Phone Number</label>
-    <input type="number" id="phoneNumber" placeholder="enter phone number" required /> 
+    <input type="number" id="phoneNumber" placeholder="enter phone number" name="phoneNumber" required /> 
     <br> <br>
 
     <label for="url">Profle Picture</label>
-    <input type='url' name="url" id="url" placeholder="Upload Profle Picture  "/>
+    <input type='url' id="url" placeholder="Upload Profle Picture" name="url" required>
 <br>
 <br>
 
 <label>Gender</label>
-    <input type="radio" id="male" value="male" name="gender" required>
+    <input type="radio" id="male" value="male"  name="male" required>
 Male
-<input type="radio" id="female" value="female" name="gender"  required>
+<input type="radio" id="female" value="female" name="male"  required>
 Female
 
 
@@ -88,19 +88,19 @@ Female
 <br>
 
 <label> Office </label>
-    <input type="checkbox" id="zarqa"  value="office" >
+    <input type="checkbox" id="zarqa"  value="office" name="zarqa" >
 Zarqa
-<input type="checkbox" id="amman" value="zarqa">
+<input type="checkbox" id="amman" value="zarqa" name="amman" >
 Amman
 
-<input type="checkbox" id="irbid" value="amman">
+<input type="checkbox" id="irbid" value="amman" name="irbid" >
 Irbid
 
 
 
 <br><br>
 <button type="submit" id="submitzz" class="button" value="Submit">Submit</button>
-    <button type="submit" id="confirm" class="button" value="Submit">Check Events</button>
+<button type="submit" id="confirm" class="button" value="Submit">Check Events</button>
 
 
 

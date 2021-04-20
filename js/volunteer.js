@@ -115,12 +115,12 @@ let imageUpload = document.getElementById('url');
  // console.log(JSON.stringify(Members.member))
  let data = localStorage.getItem("member"); 
 
- if(data==null){
-  console.log('data is null')
- }
- else{
-//  console.log(JSON.parse(data))
- }  
+//  if(data==null){
+//   console.log('data is null')
+//  }
+//  else{
+// //  console.log(JSON.parse(data))
+//  }  
 
   localStorage.setItem("member", JSON.stringify(Members.member)); 
   render()
@@ -171,8 +171,6 @@ function render(){
   // console.log('test members num'+ Members.member.length)
 
 
-  
-}
 
 let test =document.getElementById('firstName').required = true;
 
@@ -190,8 +188,8 @@ function getData()
   if(data !== null)
  {
  Members.member = JSON.parse(data);  
+}
 
- }
  
 }
 
@@ -200,7 +198,7 @@ function getData()
 
 let form=document.getElementById('confirm');
 
-form.addEventListener('click',showItem);
+form.addEventListener('onclick',showItem);
 
 
 let zarqa=document.getElementById('zarqa');
@@ -255,4 +253,4 @@ irbidlist.style.display = "inline-block";
       }
     
 }
-
+}
