@@ -87,11 +87,11 @@ function listProduct() {
 
                 function total(event) {
                     console.log(event.target);
-                    let changedIndex=products.indexOf(event.target.name);
-                    let ourtarget=document.getElementById(event.target.name);
+                    let changedIndex = products.indexOf(event.target.name);
+                    let ourtarget = document.getElementById(event.target.name);
                     let value = itemNo.value * products[i].price;
                     console.log(value);
-                    ourtarget.textContent =  value + ' JOD';
+                    ourtarget.textContent = value + ' JOD';
                     products[i].total = value;
                     products[i].purshaceNo = itemNo.value;
                     console.log('The total quantity', products[i].purshaceNo);
@@ -100,7 +100,7 @@ function listProduct() {
                 }
             }
         }
-    }  
+    }
 
    
 
@@ -120,7 +120,12 @@ function listProduct() {
     function checkout(event){
         localStorage.clear();
         event.preventDefault();
-        alert('Thanks for your donation\n your total purchase value is '+ megaTotal+' JoD');
+        // alert('Thanks for your donation\n your total purchase value is '+ megaTotal+' JoD');
+        Swal.fire(
+            'Thank You For Your Purchase!',
+            'Your Money Will Help People in Need!',
+            'success'
+          );
         let thElement=document.getElementById('th');
         console.log(thElement);
         let main=document.getElementById('main');
