@@ -29,26 +29,31 @@ header img{
 #logo{    
     width: 40%; 
     background-color: whitesmoke;
+
 }
 #logo h1{    
     /* height: 100px; */
     padding-left: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #1D0024;
+    color: rgb(194, 52, 52);
     font-size: 20px;
     padding-top: 50px;
     vertical-align: text-bottom;
+    margin-left: 250px;
+    margin-bottom: 30px;
 } 
 #links{ 
-    width: 75%; 
+    /* width: 75%;  */
     background-color: whitesmoke;   
+    /* color: #FF4332; */
+    margin-left: 500px;
 }
 header ol li:first-child{
     margin-left: 50px;   
 }
 header ol li{
     display: inline;
-    padding: 20px;   
+    padding: 10px;   
     text-decoration: none; 
 }
 header ol li a{      
@@ -73,7 +78,33 @@ main img{
     float: left;
     margin-bottom: 70px;
     line-height: 120%;
+    text-align: center;
 }
+
+.VG1 b{
+    font-size: 30px;
+    color: rgb(194, 52, 52);
+    
+}
+
+.VG2 b{
+    font-size: 30px;
+    color: rgb(194, 52, 52);
+    
+}
+
+.VG1 p{
+
+    margin-top: -80px;
+    /* color: #b90f00; */
+}
+
+
+.VG2 p{
+
+    margin-top: -70px;
+}
+
 .VG2 {    
     border-left: black solid 1px;
     
@@ -134,6 +165,8 @@ header ol{
 }
 .cart{
     width: 50px;
+    /* margin-right: 500px; */
+    
 }
 
 .feedback3{
@@ -146,4 +179,22 @@ header ol{
 
 .feedback label{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+
+}
+
+#links li a {
+    color: rgb(194, 52, 52);
+}
+
+.feedback textarea{
+    border: 3px dashed rgb(194, 52, 52);
+}
+
+.feedback input{
+    border: 3px dashed rgb(194, 52, 52);
+}
+
+#logo img{
+    margin-top: 25px;
 }
