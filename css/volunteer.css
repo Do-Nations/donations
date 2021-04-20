@@ -12,6 +12,10 @@ html
 }
 
 
+img
+{
+display: inline;
+}
 
 .volunteerform
 {
@@ -57,9 +61,25 @@ button {
     padding-bottom: 44%;
     background-size: cover;
     background-repeat: no-repeat;
+    animation-name: test;
+animation-duration:5s;
+ animation-iteration-count: infinite;
+  
 }
 
-
+@keyframes test {
+    50% {
+      background-image: url("../img/volun.jpg");
+    }
+   75%
+   {
+    background-image: url("../img/hero2.jpg");
+   }
+   100%
+   {
+    background-image: url("../img/hero3.jpg");
+   }
+  }
 
 #herotext
 {
@@ -84,20 +104,16 @@ padding: 10px 20px;
   {
       font-weight: bold;
   }
-  
-  section
-  {
- 
-      width:44%;
-      margin: auto;
-    
-  }
 
-  section ul 
-  {
-      text-align: center;
-      margin-top: 4%;
-  }
+
+.events-loc
+{
+    
+text-align: center;
+margin-top: 9%;
+}
+
+
 
   #zarqa-list,#amman-list,#irbid-list
   {
@@ -110,11 +126,30 @@ ul
     width: 22%;
 
 }
-#list
+.events-loc ul li 
 {
-    background-color: yellow;
+    font-weight: bold;
+}
+
+
+#list p
+{
+    margin-top: 0.5%;
+    border:1px solid;
+    width:100%;
+
+
+}
+#list img
+{
+    margin-top: 2%;
+
 }
   
+#zarqa-list li 
+{
+    display: inline;
+}
 #zarqa-list li img{
     width: 200px;
 }

@@ -17,13 +17,13 @@ function replace(event){
 photo2.addEventListener('click', replace2)
 
 function replace2(){
-    heroimg.src = '../img/project2.jpg'
+    heroimg.src = '../img/project9.jpg'
 }
 
 photo3.addEventListener('click', replace3)
 
 function replace3(){
-    heroimg.src = '../img/project3.jpg'
+    heroimg.src = '../img/project8.png'
 }
 
 photo4.addEventListener('click', replace4)
@@ -41,5 +41,5 @@ function replace5(){
 photo6.addEventListener('click', replace6)
 
 function replace6(){
-    heroimg.src = '../img/project6.jpg'
+    heroimg.src = '../img/project7.jpg'
 }
