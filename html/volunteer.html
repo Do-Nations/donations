@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="/css/volunteer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
 
 
@@ -50,33 +52,37 @@
     <p id="herotext"></p>
     <fieldset>
   <legend> &nbsp; Fill this form &nbsp; </legend> 
-    <label>First Name</label>
-    <input type="text" id="firstName"  /> 
+    <label>Full Name</label>
+    <input type="text" id="firstName"  placeholder="enter your name"/> 
 <br>
 <br>
-    <label  id="specialtext">Last Name</label>
-    <input type="text" id="lastName" required /> 
+    <!-- <label  id="specialtext">Last Name</label>
+    <input type="text" id="lastName"  required /> 
 
 
     <br>
-    <br>
+    <br> -->
 
     <label>Age </label>
-    <input type="text" id="age" required> 
+    <input type="number" id="age" placeholder="enter your age" required/> 
     <br><br>
 
 
     <label>Phone Number</label>
-    <input type="text" id="phoneNumber" required > 
+    <input type="number" id="phoneNumber" placeholder="enter phone number" required /> 
+    <br> <br>
 
+    <label for="url">Profle Picture</label>
+    <input type='url' name="url" id="url" placeholder="Upload Profle Picture  "/>
 <br>
 <br>
 
 <label>Gender</label>
-    <input type="radio" id="male" value="male" name="gender" value="male" required>
+    <input type="radio" id="male" value="male" name="gender" required>
 Male
-<input type="radio" id="female" value="female" name="gender" value="female" required>
+<input type="radio" id="female" value="female" name="gender"  required>
 Female
+
 
 <br>
 <br>
@@ -90,10 +96,7 @@ Amman
 <input type="checkbox" id="irbid" value="amman">
 Irbid
 
-<br> <br>
 
-<label for="url">Image URL</label>
-<input type='url' name="url" id="url"/>
 
 <br><br>
 <button type="submit" id="submitzz" class="button" value="Submit">Submit</button>
@@ -107,8 +110,9 @@ Irbid
 <section class="events-loc">
 
 <ul id="zarqa-list">
-    <li>Zarqa Donations<img src="../img/events/1.png"></li>
+
     <li>Zarqa RunnerUps<img src="../img/events/2.jpg"></li>
+    <li>Zarqa Donations<img src="../img/events/1.png"></li>
     <li>Zarqa FoodFest<img src="../img/events/3.jpg"></li>
 </ul>
 

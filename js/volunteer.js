@@ -51,10 +51,10 @@ function slowwrite() {
 // Start now today 
 
 
-function Members(fname,lname,age,phone,type, imageUpload) {
+function Members(fname,age,phone,type, imageUpload) {
     
   this.fname = fname;
-  this.lname = lname;
+  // this.lname = lname;
   this.age = age;
   this.phone = phone;
   this.type=type;
@@ -79,7 +79,7 @@ function showlist(event) {
   event.preventDefault();
 
 let fname =document.getElementById('firstName');
-let lname =document.getElementById('lastName');
+// let lname =document.getElementById('lastName');
 let age =document.getElementById('age');
 let phone =document.getElementById('phoneNumber');
 let male=document.getElementById('male')
@@ -90,7 +90,7 @@ let imageUpload = document.getElementById('url');
 
 
   fname =fname.value
-  lname=lname.value
+  // lname=lname.value
   age=age.value
   phone=phone.value
   imageUpload=imageUpload.value
@@ -99,15 +99,18 @@ let imageUpload = document.getElementById('url');
   let newsMember;
   if(male.checked)
   {
-    type='male'
+    type='male';
   }
   
-  else
+  else if(female.checked)
   {
-    type='female'
+    type='female';
+  }
+  else{
+    type='';
   }
   
-  newsMember= new Members(fname,lname,age,phone,type, imageUpload)
+  newsMember= new Members(fname,age,phone,type, imageUpload)
 
  // console.log(JSON.stringify(Members.member))
  let data = localStorage.getItem("member"); 
@@ -139,21 +142,30 @@ function render(){
 
   for(let i= 0 ; i < Members.member.length;i++)
 {
+  let diviMini=document.createElement('div');
+  diviMini.setAttribute('class','user-cart');
   let paraghh = document.createElement('p');
 
-
-  let imageUpload = document.createElement('img')
-  divElement.appendChild(imageUpload)
+  let imageUpload = document.createElement('img');
   imageUpload.src = Members.member[i].imageUpload;
-  imageUpload.style.width = '156px';
+  imageUpload.style.width = '250px';
+  // imageUpload.style.height = '220px';
 
-  
-  paraghh.innerHTML = ` Name is : ${Members.member[i].fname} ${Members.member[i].lname},
+  paraghh.innerHTML = ` Name : ${Members.member[i].fname},
   <br> Age: ${Members.member[i].age}, <br>
-  Phone Number: ${Members.member[i].phone}, <br>
+  Phone : ${Members.member[i].phone}, <br>
    Gender: ${Members.member[i].type} <br>`;
 
-   divElement.appendChild(paraghh)
+  diviMini.appendChild(paraghh);
+  diviMini.appendChild(imageUpload);
+
+
+
+  divElement.appendChild(diviMini);
+
+  
+
+  //  divElement.appendChild(paraghh)
 
 
   // console.log('test members num'+ Members.member.length)
