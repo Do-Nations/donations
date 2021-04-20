@@ -81,6 +81,7 @@ function showProduct(event){
     sbmitted.setAttribute('type', 'submit');
     sbmitted.setAttribute('name', 'submit');
     sbmitted.setAttribute('value', 'Add to Cart');
+    sbmitted.setAttribute('id', 'button');
     linkCart.appendChild(sbmitted);
 
     productForm.addEventListener('submit', updatePurshase);

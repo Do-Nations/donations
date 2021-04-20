@@ -25,12 +25,11 @@ function listProduct() {
     // let megaTotal = megaSum(); 
     console.log(products)
 
-    if(products===null){
-        console.log('the storage is empty');
-        let thElement=document.getElementById('main');
-        let tableId=document.getElementById('table')
-        console.log(thElement);
-        thElement.removeChild(tableId);
+    if(products===null){       
+
+        let main=document.getElementById('main');
+        main.textContent='Cart is Empty';
+        sbmitted.textContent='Thanks'
     }else{    
         for (let i = 0; i < products.length; i++) {
 
@@ -39,7 +38,7 @@ function listProduct() {
                 // set the initial value of t
                 products[i].total = products[i].price;
                 megaTotal = megaSum();
-                all.innerHTML = `Total: ${megaTotal}`;
+                all.innerHTML = `Total: ${megaTotal}  JOD`;
                             
                 // Create the table row
                 let row = document.createElement('tr');
@@ -96,7 +95,7 @@ function listProduct() {
                     products[i].purshaceNo = itemNo.value;
                     console.log('The total quantity', products[i].purshaceNo);
                     megaTotal = megaSum();
-                    all.innerHTML = `Total: ${megaTotal}`;
+                    all.innerHTML = `Total: ${megaTotal} JOD`;
                 }
             }
         }
@@ -110,7 +109,8 @@ function listProduct() {
     sbmitted.setAttribute('type', 'button');
     sbmitted.setAttribute('name', 'submit');
     sbmitted.setAttribute('value', 'Checkout');
-    parent.appendChild(sbmitted);
+    sbmitted.setAttribute('id', 'checkout');
+    main.appendChild(sbmitted);
 
     // event related to submitt buttom
 
@@ -122,19 +122,9 @@ function listProduct() {
         alert('Thanks for your donation\n your total purchase value is '+ megaTotal+' JoD');
         let thElement=document.getElementById('th');
         console.log(thElement);
-        thElement.textContent='';
-
-        // console.log('This is the event',event);    
-
-        // for (let i=0;i<products.length;i++){
-        //     let TorF =event.target[i].checked;
-        //     if (TorF==true){
-        //         products[i].purshaceNo++;
-        //         console.log(products[i].purshaceNo);             
-        //     }
-        // }
-        // let stringProduct=JSON.stringify(products)
-        // localStorage.setItem('Products',stringProduct);
+        let main=document.getElementById('main');
+        main.textContent='Cart is Empty';
+        
     }
 }
 listProduct();

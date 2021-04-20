@@ -1,58 +1,77 @@
-*{
+*{ 
     box-sizing: border-box;
     
 }
-body{
-    background-color: whitesmoke;
-    margin: 20px;
-    position: absolute;
-}
-
 
 main{
     position: relative;
-    top: 200px;
-    height: 1000px;
-}
-table th,tr, td{
-    border: solid,black;
-    width: 300px;
-    text-align: center;
-    padding: 15px;
-}
-th{
-    /* display: none; */
+    /* top: 25px; */
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
+#all{
+    position: absolute;
+    top: 75px;
+    right: 5%;
+    background-color:#B90F00 ;
+    padding: 15px; 
+    border-radius: 5%;   
+    font-size: 20px;
+    border: black solid 2px;
+
+}
+
+#table th,tr{
+    border: solid black;
+    width: 200px;
+    align-content: center;
+}
+#container {
+    overflow-y: auto;
+    height: 300px;
+    padding: 20px;
+}
+th,tr{
+    border: solid black;
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+
+    
+}
+td {
+    
+    vertical-align: middle;
+}
+td img{   
+    margin: 5px auto 5px auto ;    
+    
+}
+main input{
+    width: 50px;
+    margin: 45px auto auto auto ;  
+    
+      
+
+}
+
+th{
+    background-color:#B90F00 ;
+}
+
+
 table img{
     width: 100px;
     height: 100px;
 }
-.box{
-    width: 350px;
-    height: 350px;
-    background-color: bisque;
-    margin: 20px;
-    text-align: center;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-}
-.box h4{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 5px;
-}
 
-.box img{
-    width: 250px;
-    height:250px;
-}
+
 .subm{
-    width: 100px;
+    width: 200px;
     height: 50px;
 
 }
@@ -71,13 +90,23 @@ main form{
     /* height: 500px;   */
     text-align: center;
 }
-.divi{
+#checkout{
     display: block;
     position: absolute;
-    bottom: 0%;
-
+    bottom: 8%;
+    left: 44%;
+    background-color: #B90F00;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 10%;
+    width: 180px;
 }
 
 
 
-
+ 
