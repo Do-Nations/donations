@@ -16,7 +16,7 @@ main div{
 
 main div p{
     padding: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 150%;
     /* text-align: justify; */
 }
@@ -51,6 +51,15 @@ main h1{
     height: 500px;
     width: 50%;
     margin: auto;
+}
+
+#hero img:hover{
+    opacity: 0.9;
+}
+
+#hero p{
+    /* font-family: 'Courgette', cursive; */
+    font-size: 20px;
 }
 
 #herotext
@@ -101,5 +110,34 @@ footer h2{
 }
 #socialMedia{
     margin-left: 10px;
+
+}
+
+#first img:hover{
+    opacity: 0.9;
+}
+
+#second img:hover{
+    opacity: 0.9;
+
+}
+
+#third img:hover{
+    opacity: 0.9;
+
+}
+
+#fourth img:hover{
+    opacity: 0.9;
+
+}
+
+#fifth img:hover{
+    opacity: 0.9;
+
+}
+
+#sixth img:hover{
+    opacity: 0.9;
 
 }
