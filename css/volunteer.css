@@ -51,7 +51,7 @@ button {
   }
   
   button:hover {
-    background-color: #4CAF50;
+    background-color: rgb(194, 52, 52);
     color: white;
   }
 
@@ -63,7 +63,7 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     animation-name: test;
-animation-duration:5s;
+animation-duration:10s;
  animation-iteration-count: infinite;
   
 }
