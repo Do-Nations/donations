@@ -3,6 +3,7 @@ let products = localStorage.getItem('Products');
 products = JSON.parse(products);
 // console.log('This is my product list', products);
 
+
 function megaSum() {
     let all = 0;
     for (let i = 0; i < products.length; i++) {

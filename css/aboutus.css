@@ -2,21 +2,35 @@
     box-sizing: border-box;
     
 }
+main{
+    font-family: 'Lora', serif;
+}
+
 
 
 main img{
     border-radius: 50%;
+
+    border: 1px solid blueviolet;
+    padding: 5px;
+   
 }
 
 main img:hover{
    transform: scale(1.2);
+   box-shadow: 0 0 5px 5px black;
 
+}
+main p{
+    line-height: 30px;
+    color: rgb(214, 35, 4);
 }
 
 #yazan{
 width: 100%;
-height: 300px;
+height: 200px;
 margin-bottom: 50px;
+font-size: 20px;
 
 }
 
@@ -28,8 +42,12 @@ margin-bottom: 50px;
 #yazan p{
     padding: 100px;
     margin-left: 260px;
-    font-size: 30px;
-}
+    font-size: 25px;
+    }
+#yazan p b {
+    font-weight: bolder;
+    font-size:29px ;
+}     
 
 #fatima{
     width: 100%;
@@ -45,7 +63,12 @@ margin-bottom: 50px;
     #fatima p{
         padding: 100px;
         margin-left: 200px;
-        font-size: 30px;
+        font-size: 25px;
+    }
+    #fatima p b{
+
+        font-weight: bolder;
+        font-size:29px ;
     }
 
     #osama{
@@ -62,7 +85,11 @@ margin-bottom: 50px;
         #osama p{
             padding: 100px;
             margin-left: 260px;
-            font-size: 30px;
+            font-size: 25px;
+        }
+        #osama p b {
+        font-weight: bolder;
+        font-size:29px ;
         }
         
         #ahmad{
@@ -79,9 +106,12 @@ margin-bottom: 50px;
             #ahmad p{
                 padding: 100px;
                 margin-left: 200px;
-                font-size: 30px;
+                font-size: 25px;
             }
-    
+            #ahmad p b{
+                font-weight: bolder;
+                font-size:29px ;
+            }
             #amro{
                 width: 100%;
                 height: 300px;
@@ -96,7 +126,11 @@ margin-bottom: 50px;
                 #amro p{
                     padding: 100px;
                     margin-left: 260px;
-                    font-size: 30px;
+                    font-size: 25px;
+                }
+                #amro p b {
+                    font-weight: bolder;
+                    font-size:29px ;
                 }
                 #bahaa{
                     width: 100%;
@@ -112,14 +146,43 @@ margin-bottom: 50px;
                     #bahaa p{
                         padding: 100px;
                         margin-left: 200px;
-                        font-size: 30px;
+                        font-size: 25px;
+                    }
+                    #bahaa p b{
+                        font-weight: bolder;
+                        font-size:29px ;
                     }
 
 
 
+
 main h1{
+    
     text-align: center;
     font-size: 50px;
     margin-top: 50px;
-}                    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation-name: blinkAnimation;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3);
+    animation-duration: 400ms;
+    
+    }
 
+    @keyframes blinkAnimation {
+        0% {
+          /*opacity: 1.0;*/
+          color:  black;
+        }
+        50% {
+          /*opacity: 0;*/
+          color: #ffffff;
+        }
+        100% {
+          /*opacity: 1.0;*/
+          color: rgb(214, 35, 4);
+        }
+      }
+      
+      
+       
