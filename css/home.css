@@ -84,12 +84,16 @@ main img{
 .VG1 b{
     font-size: 30px;
     color: rgb(194, 52, 52);
+    position: relative;
+    bottom: 20px;
     
 }
 
 .VG2 b{
     font-size: 30px;
     color: rgb(194, 52, 52);
+    position: relative;
+    bottom: 20px;
     
 }
 
