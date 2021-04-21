@@ -104,7 +104,7 @@ function showProduct(event){
                console.log(products[i].purshaceNo);
       }
     }
-    let stringProduct = JSON.stringify(products)
+    let stringProduct = JSON.stringify(products);
     localStorage.setItem('Products', stringProduct);
     Swal.fire(
       'Done!',
@@ -123,4 +123,21 @@ document.getElementById('close').addEventListener('click', function () {
 
   document.getElementById('big-popup').setAttribute('style','display:none');
 
+});
+document.getElementById('button2').addEventListener('click', function (event) {
+event.preventDefault();
+
+setTimeout(function(){
+  document.getElementById('big-popup').setAttribute('style','display:none');
+},3000);
+  
+Swal.fire({
+  title: 'Transaction Sucessful!<br><br>',
+  html: 'Thank You For Your Donation!<br><br>',
+  width:500,
+  showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+   
+});
 });

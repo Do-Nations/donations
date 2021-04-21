@@ -3,11 +3,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-}
+
 body{
     background-color:whitesmoke;
     margin-right: 1.5%;
     margin-left: 1.5%;
+    overflow-x:hidden;
 }
 header {
 
@@ -47,6 +48,7 @@ header img{
     background-color: whitesmoke;   
     /* color: #FF4332; */
     margin-left: 500px;
+    /* width: 580px; */
 }
 header ol li:first-child{
     margin-left: 50px;   
@@ -62,6 +64,7 @@ header ol li a{
     color: #1D0024;
     font-weight: bold;
     z-index: 2;
+    font-size: 17px;
 }
 
 main img{
@@ -103,6 +106,8 @@ main img{
     margin-top: -80px;
     /* color: #b90f00; */
     text-align: justify;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 
@@ -110,6 +115,8 @@ main img{
 
     margin-top: -70px;
     text-align: justify;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .VG2 {    
@@ -165,10 +172,14 @@ footer h2{
 }
 
 header ol{
-    width: 500px;
+    /* width: 500px;
+    margin: 0; */
+    width: 700px;
+    /* margin-right: 200px; */
+    padding-right: 200px;
 }
 #links{
-    width: 700px;
+    width: 500px;
 }
 .cart{
     width: 50px;
