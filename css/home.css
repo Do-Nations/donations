@@ -71,6 +71,7 @@ main img{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px;
+    
 }
 .VG1,.VG2 {
     width: 50%;
@@ -101,12 +102,14 @@ main img{
 
     margin-top: -80px;
     /* color: #b90f00; */
+    text-align: justify;
 }
 
 
 .VG2 p{
 
     margin-top: -70px;
+    text-align: justify;
 }
 
 .VG2 {    
@@ -211,4 +214,8 @@ header ol{
     font-size: 20px;
     font-family: cursive;
     line-height: 1.5;
+}
+
+#hero-img{
+    margin-bottom: 0;
 }
