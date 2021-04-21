@@ -101,7 +101,11 @@ function showProduct(event){
     }
     let stringProduct = JSON.stringify(products)
     localStorage.setItem('Products', stringProduct);
-
+    Swal.fire(
+      'Done!',
+      'Successfully Added To Cart!',
+      'success'
+    );
   }
 
 }
