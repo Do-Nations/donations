@@ -64,10 +64,11 @@ function listProduct() {
                 itemNo.setAttribute('type', 'number');
                 itemNo.setAttribute('name', products[i].name);
                 itemNo.setAttribute('value', '1');
+                
                 // create the 5th detail-total price including the change event. 
                 detailtotal=document.createElement('td');
                 row.appendChild(detailtotal);
-                detailtotal.setAttribute('id',products[i].name)
+                detailtotal.setAttribute('id',products[i].name);
                 detailtotal.textContent=products[i].price+ ' JOD';
 
                 

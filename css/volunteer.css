@@ -16,9 +16,6 @@ img
 {
 display: inline;
 }
-body{
-    width: 100%;
-}
 
 .volunteerform
 {
@@ -54,7 +51,7 @@ button {
   }
   
   button:hover {
-    background-color: rgb(194, 52, 52);
+    background-color: #4CAF50;
     color: white;
   }
 
@@ -66,7 +63,7 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     animation-name: test;
-animation-duration:10s;
+animation-duration:5s;
  animation-iteration-count: infinite;
   
 }
@@ -222,18 +219,15 @@ padding-bottom: 20px;
     display: inline-block;
     border:gray inset 4px;
     background-color:whitesmoke;
-    /* height: 320px; */
+    height: 320px;
     margin-left: 7%;
     margin-bottom: 1%;
-    border-radius: 4%;
-    /* position: relative; */
 
     
 
 }
 .user-cart p {
-    /* position: absolute; */
-    width: 40%;
+    width: 45%;
     margin-top: 5%;
     /* border:1px solid; */
     /* display: inline-block; */
@@ -241,11 +235,10 @@ padding-bottom: 20px;
     font-family: 'Architects Daughter', cursive;
     font-size: 25px;
     font-weight: bolder;
-    height:100%;
-    line-height:150%;
+    height: 80%;
+    line-height:200%;
     color: olive;
-    /* text-align: justify; */
-    
+    text-align: justify;
    
   
     
@@ -254,8 +247,11 @@ padding-bottom: 20px;
     margin-top: 5%;
     margin-left: 5%;
     float: right;
-    height: 250px;
+    height: 80%;
     
 
 }
+    /* #list{
+        overflow: scroll;
+    } */
 

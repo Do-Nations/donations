@@ -198,7 +198,7 @@ function getData()
 
 let form=document.getElementById('confirm');
 
-form.addEventListener('onclick',showItem);
+form.addEventListener('click',showItem);
 
 
 let zarqa=document.getElementById('zarqa');
