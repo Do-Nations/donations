@@ -51,7 +51,7 @@ button {
   }
   
   button:hover {
-    background-color: #4CAF50;
+    background-color:  rgb(194, 52, 52);
     color: white;
   }
 
@@ -237,7 +237,7 @@ padding-bottom: 20px;
     font-weight: bolder;
     height: 80%;
     line-height:200%;
-    color: olive;
+    color:  rgb(194, 52, 52);
     text-align: justify;
    
   
