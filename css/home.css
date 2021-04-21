@@ -202,3 +202,13 @@ header ol{
 #logo img{
     margin-top: 25px;
 }
+
+#definition{
+    width: 30%;
+    text-align: justify;
+    margin: auto;
+    margin-bottom:100px;
+    font-size: 20px;
+    font-family: cursive;
+    line-height: 1.5;
+}
