@@ -64,6 +64,9 @@ function listProduct() {
                 itemNo.setAttribute('type', 'number');
                 itemNo.setAttribute('name', products[i].name);
                 itemNo.setAttribute('value', '1');
+                itemNo.setAttribute('min', '0');
+                // itemNo.setAttribute('max', '5');
+                
                 
                 // create the 5th detail-total price including the change event. 
                 detailtotal=document.createElement('td');

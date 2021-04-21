@@ -52,11 +52,16 @@ function showProduct(event){
         let productDescription = document.createElement('h4');
         productDescription.textContent = products[i].name;
         divisons.appendChild(productDescription);
+        // create the price head
+        let productPrice = document.createElement('h4');
+        productPrice.textContent = products[i].price+' JOD';
+        divisons.appendChild(productPrice); 
+
         // Create the form label
         let productLable = document.createElement('label');
         productLable.setAttribute('for', products[i].name);
         divisons.appendChild(productLable);
-        productLable.textContent = products[i].price + ' JOD';
+        productLable.textContent = ' Add Item';
 
         // This is to creat the input element and add its attribute.
         let checkpointProduct = document.createElement('input');

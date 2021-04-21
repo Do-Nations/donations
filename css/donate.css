@@ -32,6 +32,7 @@ main{
     cursor: pointer; 
     font-size: 35px;
     font-weight: bold;
+    border-radius: 5%;
     
 }
 #sd1:hover{
@@ -46,8 +47,8 @@ main{
 #sd1{
     background-image: url(../img/donation/Pottery\ jar.jpg);
     background-position: right bottom, left top;
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -59,8 +60,8 @@ main{
 
 #sd2{
     background-image:url(../img/donation/donation\ money.jpg) ;
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -79,7 +80,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;   
-    border: black solid 2px; 
+    border: rgb(194, 52, 52) solid 2px; 
     border-radius: 5%;
 }
 .box h4{
