@@ -8,6 +8,8 @@ html
 {
     display: inline-block;
     width: 33%;
+    text-align: justify;
+    font-size: larger;
 
 }
 
@@ -19,9 +21,16 @@ display: inline;
 
 .volunteerform
 {
-width: 33%;
+width: 60%;
     margin: auto ;
     margin-top: 4%;
+    
+}
+
+.volunteerform input{
+    padding: 20px 100px ;
+    
+
 }
 
 fieldset
@@ -29,7 +38,12 @@ fieldset
     border: 4px solid black ;
     border-spacing: 33px;
     padding: 3%;
-
+    width: 100%;
+    margin: auto;
+    padding-left: 200px;
+    background-color: rgb(247, 210, 210);
+    
+    
 }
 
 
@@ -42,17 +56,18 @@ font-style: italic;
 text-align: center;
 }
 
-button {
+fieldset button {
     display: inline-block;
-    background-color: white; 
-    color: black; 
+    background-color: rgb(194, 52, 52); 
+    color: white; 
    margin-left: 18%;
    padding:2%;
+   width: 125px;
   }
   
   button:hover {
-    background-color:  rgb(194, 52, 52);
-    color: white;
+    background-color:white  ;
+    color: black;
   }
 
 
@@ -218,7 +233,7 @@ padding-bottom: 20px;
     padding: 15px;
     display: inline-block;
     border:gray inset 4px;
-    background-color:whitesmoke;
+    background-color:rgb(247, 210, 210);
     height: 320px;
     margin-left: 7%;
     margin-bottom: 1%;
@@ -254,4 +269,5 @@ padding-bottom: 20px;
     /* #list{
         overflow: scroll;
     } */
+
 

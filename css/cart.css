@@ -33,7 +33,7 @@ main{
 }
 #container {
     overflow-y: auto;
-    height: 300px;
+    height: 400px;
     padding: 20px;
 }
 th,tr{

@@ -172,7 +172,7 @@ main h1{
     @keyframes blinkAnimation {
         0% {
           /*opacity: 1.0;*/
-          color:  black;
+          color: rgb(214, 35, 4);
         }
         50% {
           /*opacity: 0;*/

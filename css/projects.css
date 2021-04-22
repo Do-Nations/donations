@@ -44,8 +44,8 @@ main h1{
 #hero{
     width: 90%;
     /* height: 100%; */
-    border: 1px solid rgb(187, 183, 183);
-    margin-left: 80px;
+    border: 2px solid rgb(194, 52, 52);
+   margin-left: 100px;
     background-color: white;
 }
 
@@ -176,5 +176,5 @@ hero p {
 }
 
 #first, #second, #third, #fourth, #fifth, #sixth{
-    margin-left: 80px;
+    margin-left: 105px;
 }
