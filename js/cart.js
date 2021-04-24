@@ -54,6 +54,7 @@ function listProduct() {
                 let productImage = document.createElement('img');
                 detailPhoto.appendChild(productImage);
                 productImage.setAttribute('src', products[i].url);
+                
                 // cretae the 3rd detail-unit price
                 detailPrice=document.createElement('td');
                 row.appendChild(detailPrice);

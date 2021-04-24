@@ -101,7 +101,7 @@ function showProduct(event){
             let TorF = event.target[i].checked;
             if (TorF == true) {
                 products[i].purshaceNo++;
-               console.log(products[i].purshaceNo);
+               console.log( products[i].purshaceNo);
       }
     }
     let stringProduct = JSON.stringify(products);
@@ -114,6 +114,8 @@ function showProduct(event){
   }
 
 }
+
+
 document.getElementById('sd2').addEventListener('click', function () {
 
   document.getElementById('big-popup').setAttribute('style','display:flex');
